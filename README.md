@@ -7,12 +7,13 @@ Google의 LaMDA나 유명한 OpenAI의 Chatgpt와 같은 언어 모델의 등장
 ### **Progress of Research** : 
 1. Text Generation
 2. seq2seq Model & Attention
-3. Transformer
+3. Transformer (24.03.10 - 24.03.13) **Attention is all you need(2017)**논문을 읽고, Transformer Architecture Implementation practice.
 4. Image Captioning
 
 
 
 
 
-
+### **출처**
+1. [딥러닝 기계 번역] Transformer: Attention Is All You Need (꼼꼼한 딥러닝 논문 리뷰와 코드 실습) 동빈나
 
