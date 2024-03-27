@@ -14,10 +14,10 @@ Google의 LaMDA나 유명한 OpenAI의 Chatgpt와 같은 언어 모델의 등장
 
 ### **Background of Studies**
 [1] P. S. Sase and S. H. Bhandari, "Human Fall Detection using Depth Videos," Department of Computer Science and Engineering, Walchand College of Engineering, Sangli, India
-[2] J. Zhang and C. Zong, "Neural machine translation: Challenges, progress and future," Science China Technological Sciences, vol. 63, no. 10, pp. 2028-2050, 2020/10/01 2020, doi: 10.1007/s11431-020-1632-x.
-[3] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, and I. Polosukhin, "Attention is all you need," IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. TBD, no. TBD, pp. TBD, Jun. 2017, revised Aug. 2023. [Online]. Available: https://arxiv.org/abs/1706.03762
-[4] A. Dosovitskiy, L. Beyer, A. Kolesnikov, D. Weissenborn, X. Zhai, T. Unterthiner, M. Dehghani, M. Minderer, G. Heigold, S. Gelly, J. Uszkoreit, and N. Houlsby, "An image is worth 16x16 words: Transformers for image recognition at scale," IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. TBD, no. TBD, pp. TBD, Oct. 2020, revised Jun. 2021. [Online]. Available: https://arxiv.org/abs/2010.11929
-[5] P. Xu, X. Zhu and D. A. Clifton, "Multimodal Learning With Transformers: A Survey," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 45, no. 10, pp. 12113-12132, Oct. 2023, doi: 10.1109/TPAMI.2023.3275156.
+<br>[2] J. Zhang and C. Zong, "Neural machine translation: Challenges, progress and future," Science China Technological Sciences, vol. 63, no. 10, pp. 2028-2050, 2020/10/01 2020, doi: 10.1007/s11431-020-1632-x.
+<br>[3] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, L. Kaiser, and I. Polosukhin, "Attention is all you need," IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. TBD, no. TBD, pp. TBD, Jun. 2017, revised Aug. 2023. [Online]. Available: https://arxiv.org/abs/1706.03762
+<br>[4] A. Dosovitskiy, L. Beyer, A. Kolesnikov, D. Weissenborn, X. Zhai, T. Unterthiner, M. Dehghani, M. Minderer, G. Heigold, S. Gelly, J. Uszkoreit, and N. Houlsby, "An image is worth 16x16 words: Transformers for image recognition at scale," IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. TBD, no. TBD, pp. TBD, Oct. 2020, revised Jun. 2021. [Online]. Available: https://arxiv.org/abs/2010.11929
+<br>[5] P. Xu, X. Zhu and D. A. Clifton, "Multimodal Learning With Transformers: A Survey," in IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 45, no. 10, pp. 12113-12132, Oct. 2023, doi: 10.1109/TPAMI.2023.3275156.
 keywords: {Transformers;Task analysis;Surveys;Visualization;Taxonomy;Mathematical models;Data models;Multimodal learning;transformer;introductory;taxonomy;deep learning;machine learning},
 
 
