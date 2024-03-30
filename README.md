@@ -11,7 +11,7 @@ Google의 LaMDA나 유명한 OpenAI의 Chatgpt와 같은 언어 모델의 등장
 
 **사용자 이메일로 상황 송신**: 마지막으로 생성된 이미지 캡셔닝을 텍스트를 사용자에게 이메일로 전송함으로 좀 더 정확한 상황을 표현합니다.
 
-> ## 1. CNN Architecture (23.11.13) [Python code](https://github.com/qkrwoghd04/2D_Game_Dev_Unity/blob/main/practice/CNN_Architecture_Practice.ipynb).
+> ## 1. CNN Architecture (23.11.13) [Python code](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/CNN_Architecture_Practice.ipynb).
 > ## 2. Transformer (24.03.10 - 24.03.13) 
 <br> **Attention is all you need(2017)** 논문을 읽고, Transformer Architecture Implementation practice
 > ## 3. Vision Transformer Architecture(ViT) (23.03.27 - ) [Python Code](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Practice.ipynb).
