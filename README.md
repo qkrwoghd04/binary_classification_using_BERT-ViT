@@ -32,15 +32,10 @@ keywords: {Transformers;Task analysis;Surveys;Visualization;Taxonomy;Mathematica
 ## Code Reference
 https://www.tensorflow.org/tutorials/images/cnn?hl=ko <br>
 https://keras.io/examples/vision/image_classification_with_vision_transformer/ <br>
-http://vision.stanford.edu/Datasets/40actions.html
+
+# Dataset Reference
+[Elderly Set]https://gram.web.uah.es/data/datasets/fpds/index.html
 
 
 
-
-
-
-
-### **출처**
-1. [딥러닝 기계 번역] Transformer: Attention Is All You Need (꼼꼼한 딥러닝 논문 리뷰와 코드 실습) 동빈나
-https://keras.io/examples/vision/image_classification_with_vision_transformer/
 
