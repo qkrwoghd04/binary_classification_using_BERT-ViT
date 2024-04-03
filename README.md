@@ -11,10 +11,21 @@ Google의 LaMDA나 유명한 OpenAI의 Chatgpt와 같은 언어 모델의 등장
 
 **사용자 이메일로 상황 송신**: 마지막으로 생성된 이미지 캡셔닝을 텍스트를 사용자에게 이메일로 전송함으로 좀 더 정확한 상황을 표현합니다.
 
-> ## 1. CNN Architecture (23.11.13) [Practice](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/CNN_Architecture_Practice.ipynb).
+> ## 1. CNN Architecture (23.11.13) [CNNPractice](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/CNN_Architecture_Practice.ipynb).
 > ## 2. Transformer (24.03.10 - 24.03.13) 
 <br> **Attention is all you need(2017)** 논문을 읽고, Transformer Architecture Implementation practice
-> ## 3. Vision Transformer Architecture(ViT) (23.03.27 - ) [Practice](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Practice.ipynb),[ICUViT](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Architecture_Practice.ipynb).
+> ## 3. Vision Transformer Architecture(ViT) (23.03.27 - 23.04.02) [ViTPractice](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Practice.ipynb),[ViT](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Architecture_Practice.ipynb).
+
+**The model shows good accuracy on the train and validation datasets, but it demonstrates a low accuracy of 0.55 on unseen test data.**
+>**ViT Hyper-Parameters:**
+- image_size: int (224)
+- patch_size: int (64)
+- num_classes: int (2)
+- epochs : 70
+- lr : 3e-6
+- weight_decay : 4e-5
+- channels: int (image channels = 3)
+
 <img width="500" height="350" alt="ViT" src="https://github.com/qkrwoghd04/multimodal_learning/assets/122519801/27777d21-e7b0-4606-8164-05f3c07799aa"><br>
 
 
@@ -32,6 +43,7 @@ keywords: {Transformers;Task analysis;Surveys;Visualization;Taxonomy;Mathematica
 ## Code Reference
 https://www.tensorflow.org/tutorials/images/cnn?hl=ko <br>
 https://keras.io/examples/vision/image_classification_with_vision_transformer/ <br>
+https://medium.com/@konstantinos.gyftodimos/vision-transformer-for-binary-classification-of-custom-dataset-hands-on-fdcd162e605e
 
 # Dataset Reference
 [Elderly Set]https://gram.web.uah.es/data/datasets/fpds/index.html
