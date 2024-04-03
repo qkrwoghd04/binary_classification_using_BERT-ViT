@@ -14,7 +14,7 @@ Google의 LaMDA나 유명한 OpenAI의 Chatgpt와 같은 언어 모델의 등장
 > ## 1. CNN Architecture (23.11.13) [CNNPractice](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/CNN_Architecture_Practice.ipynb).
 > ## 2. Transformer (24.03.10 - 24.03.13) 
 <br> **Attention is all you need(2017)** 논문을 읽고, Transformer Architecture Implementation practice
-> ## 3. Vision Transformer Architecture(ViT) (23.03.27 - 23.04.02) [ViTPractice](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Practice.ipynb),[ViT](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Architecture_Practice.ipynb).
+> ## 3. Vision Transformer Architecture(ViT) (23.03.27 - 23.04.02) [ViTPractice](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Practice.ipynb) [ViT](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Architecture_Practice.ipynb)
 
 **The model shows good accuracy on the train and validation datasets, but it demonstrates a low accuracy of 0.55 on unseen test data.**
 >**ViT Hyper-Parameters:**
@@ -29,7 +29,7 @@ Google의 LaMDA나 유명한 OpenAI의 Chatgpt와 같은 언어 모델의 등장
 <img width="500" height="350" alt="ViT" src="https://github.com/qkrwoghd04/multimodal_learning/assets/122519801/27777d21-e7b0-4606-8164-05f3c07799aa"><br>
 
 
-> ## 4. Image Captioning
+> ## 4. Image Captioning [Code](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/practice/Image_Captioning.ipynb)
 > ## 5. SMTP Protocol
 ---
 ### **Reference List**
