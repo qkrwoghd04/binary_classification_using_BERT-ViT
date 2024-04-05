@@ -1,21 +1,23 @@
 ## **Project** : Mobile Agent For Smart Home Using Multimodal Learning <2023-11-13>
 ### **Project Field** : Multimodal Learning, ViT, Transformer, Image captioning
-#### **Project Description** :
+### **Project Description** :
 The emergence of language models such as Google's LaMDA and OpenAI's ChatGPT has made significant contributions to fields like text generation, machine translation, and question-answering systems. Additionally, the arrival of models like CLIP and DALL-E, which understand and utilize the interaction between two modalities, has signaled the beginning of the Multimodality era. The use of various modalities, not limited to vision and text, enables the performance of richer and more diverse tasks compared to models that depend solely on one modality. This project aims to develop a Multimodal Model that can be embedded in robots designed to detect emergency situations for elderly individuals living alone. By leveraging the Vision Transformer model and image captioning, we intend to address problems that were previously undetectable. According to previous studies, "It was impossible to determine whether a person lying on the floor in a still image had fallen or was simply lying down." This is evidenced by the fact that after training on datasets for single modality, the test accuracy for BERT and ViT models was only 0.75 and 0.6, respectively, showing the difficulty. Compared to using a single modality, Vision-Language Models that utilize a dataset combining two modalities show significantly better results with a test accuracy of 0.95.
 
 ---
 ### **Methodologies**
+
+**BERT** 
+
 **Sleep & Fall Binary Classification** using CNN and ViT Architectures: CNN and ViT are two main neural network architectures widely used for tasks related to image processing. While CNN operates based on local features, ViT treats the image as a whole in a global context. By comparing the performance of both models on the same dataset, we aim to understand the strengths and weaknesses of these architectures and determine how well classification can be achieved using just one modality.
 
-**Image Captioning**: Through image captioning techniques, features extracted from the generated captions are used to add weight to the image classification task, enabling the model to make more accurate distinctions between the two scenarios.
+**Multimodality**
 
-**Sending Situation to User via Email using SMTP protocol**: Finally, the derived results are sent to the user via email.
-
-> ## 1. CNN Architecture (23.11.13) [CNNPractice](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/CNN_Architecture_Practice.ipynb).
+---
+> ## 1. BERT [BERT_MODEL_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_fusion_using_BERT.ipynb)
+> ## 2. CNN Architecture (23.11.13) [REFERENCE_MODEL_CODE](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/CNN_Architecture_Practice.ipynb).
 > ## 2. Transformer (24.03.10 - 24.03.13) 
 <br> **Attention is all you need(2017)** 논문을 읽고, Transformer Architecture Implementation practice
-> ## 3. Vision Transformer Architecture(ViT) (23.03.27 - 23.04.02) [ViTPractice](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Practice.ipynb) [ViT](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Architecture_Practice.ipynb)
-
+> ## 3. Vision Transformer Architecture(ViT) (23.03.27 - 23.04.02) [ViT_MODEL_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_fusion_using_ViT.ipynb)
 **The model shows good accuracy on the train and validation datasets, but it demonstrates a low accuracy of 0.6 on unseen test data.**
 >**ViT Hyper-Parameters:**
 - image_size: int (224)
@@ -27,10 +29,15 @@ The emergence of language models such as Google's LaMDA and OpenAI's ChatGPT has
 - channels: int (image channels = 3)
 
 <img width="500" height="350" alt="ViT" src="https://github.com/qkrwoghd04/multimodal_learning/assets/122519801/27777d21-e7b0-4606-8164-05f3c07799aa"><br>
+> ## 4. Multimodal deep learning [LATE_FUTION_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_late_fusion.ipynb)
+---
+### **Dataset**
+## Image Dataset
 
+## Text Dataset
 
-> ## 4. Image Captioning [Code](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/practice/Image_Captioning.ipynb)
-> ## 5. SMTP Protocol
+## fusion Dataset
+
 ---
 ### **Reference List**
 [1] P. S. Sase and S. H. Bhandari, "Human Fall Detection using Depth Videos," Department of Computer Science and Engineering, Walchand College of Engineering, Sangli, India
