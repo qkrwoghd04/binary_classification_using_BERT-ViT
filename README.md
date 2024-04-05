@@ -1,8 +1,7 @@
 ## **Project** : Mobile Agent For Smart Home Using Multimodal Learning <2023-11-13>
 ### **Project Field** : Multimodal Learning, ViT, Transformer, Image captioning
 #### **Project Description** :
-The advent of language models such as Google's LaMDA and OpenAI's ChatGPT has made significant contributions to fields like text generation, machine translation, and question-answering systems. Furthermore, the emergence of models like CLIP and DALL-E, which understand and utilize the interaction between two modalities, has ushered in the era of Multimodality. The use of various modalities, not limited to vision and text, enables the performance of richer and more diverse tasks compared to models with only one modality. This project aims to develop a Multimodal Model that can be embedded in robots designed to detect emergency situations for elderly individuals living alone. By leveraging the Vision Transformer model and image captioning, we intend to address issues that were previously undetectable. "The proposed method is not applicable to a person lying on the floor. This problem can be addressed by calculating the speed of a person while lying on the floor and while undergoing a fall. Full occlusion of a person is not addressed in the present work[1]." Compared to using a single modality, Vision-Language Models allow for the conversion of images to text, further enabling the implementation of a feature that sends precise situational emails to users.
-
+The emergence of language models such as Google's LaMDA and OpenAI's ChatGPT has made significant contributions to fields like text generation, machine translation, and question-answering systems. Additionally, the arrival of models like CLIP and DALL-E, which understand and utilize the interaction between two modalities, has signaled the beginning of the Multimodality era. The use of various modalities, not limited to vision and text, enables the performance of richer and more diverse tasks compared to models that depend solely on one modality. This project aims to develop a Multimodal Model that can be embedded in robots designed to detect emergency situations for elderly individuals living alone. By leveraging the Vision Transformer model and image captioning, we intend to address problems that were previously undetectable. According to previous studies, "It was impossible to determine whether a person lying on the floor in a still image had fallen or was simply lying down." This is evidenced by the fact that after training on datasets for single modality, the test accuracy for BERT and ViT models was only 0.75 and 0.6, respectively, showing the difficulty. Compared to using a single modality, Vision-Language Models that utilize a dataset combining two modalities show significantly better results with a test accuracy of 0.95.
 
 ---
 ### **Methodologies**
@@ -17,7 +16,7 @@ The advent of language models such as Google's LaMDA and OpenAI's ChatGPT has ma
 <br> **Attention is all you need(2017)** 논문을 읽고, Transformer Architecture Implementation practice
 > ## 3. Vision Transformer Architecture(ViT) (23.03.27 - 23.04.02) [ViTPractice](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Practice.ipynb) [ViT](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/Vision_Transformer_Architecture_Practice.ipynb)
 
-**The model shows good accuracy on the train and validation datasets, but it demonstrates a low accuracy of 0.55 on unseen test data.**
+**The model shows good accuracy on the train and validation datasets, but it demonstrates a low accuracy of 0.6 on unseen test data.**
 >**ViT Hyper-Parameters:**
 - image_size: int (224)
 - patch_size: int (64)
