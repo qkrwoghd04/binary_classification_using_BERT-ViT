@@ -7,11 +7,11 @@ The emergence of language models such as Google's LaMDA and OpenAI's ChatGPT has
 ## **Methodologies**
 
 > ### 1. BERT [BERT_MODEL_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_fusion_using_BERT.ipynb)
-![image](https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/29666a47-d641-4c58-b107-4596ed4c995c)
+<img width="500" height='250' alt="bert_embedding" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/24495c87-3f3e-44ca-94a0-5c7e9d65de1c">
 
 > ### 2. CNN Architecture (23.11.13) [REFERENCE_MODEL_CODE](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/CNN_Architecture_Practice.ipynb).
 > ### 3. Transformer (24.03.10 - 24.03.13)
-<img width="298" alt="image" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/2d8ce1cf-c305-4863-8f8a-6d1009ce05cf">
+<img width="500" height='350' alt="image" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/2d8ce1cf-c305-4863-8f8a-6d1009ce05cf">
 
 > ### 4. Vision Transformer Architecture(ViT) (23.03.27 - 23.04.02) [ViT_MODEL_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_fusion_using_ViT.ipynb)
 **The model shows good accuracy on the train and validation datasets, but it demonstrates a low accuracy of 0.6 on unseen test data.**
