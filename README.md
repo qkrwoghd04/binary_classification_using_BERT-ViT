@@ -7,8 +7,12 @@ The emergence of language models such as Google's LaMDA and OpenAI's ChatGPT has
 ## **Methodologies**
 
 > ### 1. BERT [BERT_MODEL_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_fusion_using_BERT.ipynb)
+![image](https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/29666a47-d641-4c58-b107-4596ed4c995c)
+
 > ### 2. CNN Architecture (23.11.13) [REFERENCE_MODEL_CODE](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/CNN_Architecture_Practice.ipynb).
-> ### 3. Transformer (24.03.10 - 24.03.13) 
+> ### 3. Transformer (24.03.10 - 24.03.13)
+<img width="298" alt="image" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/2d8ce1cf-c305-4863-8f8a-6d1009ce05cf">
+
 > ### 4. Vision Transformer Architecture(ViT) (23.03.27 - 23.04.02) [ViT_MODEL_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_fusion_using_ViT.ipynb)
 **The model shows good accuracy on the train and validation datasets, but it demonstrates a low accuracy of 0.6 on unseen test data.**
 <img width="500" height="350" alt="ViT" src="https://github.com/qkrwoghd04/multimodal_learning/assets/122519801/27777d21-e7b0-4606-8164-05f3c07799aa"><br>
