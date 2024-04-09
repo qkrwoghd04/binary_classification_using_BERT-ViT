@@ -39,8 +39,8 @@ The emergence of language models such as Google's LaMDA and OpenAI's ChatGPT has
 - ### **Table**
 | Method | Accuracy(%) |
 |----------|----------|
-| Image (ViT)   | 60  |
-| Text (BERT)   | 64.9   |
+| Image (ViT)   | 70  |
+| Text (BERT)   | 87.4   |
 | **Late Fusion (BERT&ViT)**   | **92.5**   |
 
 - ### **Visualization**
