@@ -1,42 +1,54 @@
 ## **Project** : Mobile Agent For Smart Home Using Multimodal Learning <2023-11-13>
 ### **Project Field** : Multimodal Learning, ViT, Transformer, Image captioning
 ### **Project Description** :
-The emergence of language models such as Google's LaMDA and OpenAI's ChatGPT has made significant contributions to fields like text generation, machine translation, and question-answering systems. Additionally, the arrival of models like CLIP and DALL-E, which understand and utilize the interaction between two modalities, has signaled the beginning of the Multimodality era. The use of various modalities, not limited to vision and text, enables the performance of richer and more diverse tasks compared to models that depend solely on one modality. This project aims to develop a Multimodal Model that can be embedded in robots designed to detect emergency situations for elderly individuals living alone. By leveraging the Vision Transformer model and image captioning, we intend to address problems that were previously undetectable. According to previous studies, "It was impossible to determine whether a person lying on the floor in a still image had fallen or was simply lying down." This is evidenced by the fact that after training on datasets for single modality, the test accuracy for BERT and ViT models was only 0.7 and 0.875, respectively, showing the difficulty. Compared to using a single modality, Vision-Language Models that utilize a dataset combining two modalities show significantly better results with a test accuracy of 0.92.
+This project aims to develop a Multimodal Model that can be embedded in robots designed to detect emergency situations for elderly individuals living alone. By leveraging the Vision Transformer model and image captioning, we intend to address problems that were previously undetectable. According to previous studies, "It was impossible to determine whether a person lying on the floor in a still image had fallen or was simply lying down." This is evidenced by the fact that after training on datasets for single modality, the test accuracy for BERT and ViT models was only 0.7 and 0.875, respectively, showing the difficulty. Compared to using a single modality, Vision-Language Models that utilize a dataset combining two modalities show significantly better results with a test accuracy of 0.92.
 
 ---
 ## **Methodologies**
 
-> ### 1. BERT [BERT_MODEL_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_fusion_using_BERT.ipynb)
-<img width="500" height='250' alt="bert_embedding" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/24495c87-3f3e-44ca-94a0-5c7e9d65de1c">
+> ### 1. BERT Implementation [BERT_MODEL_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_fusion_using_BERT.ipynb)
+**This project utilized a general Pretrained BERT model, and employed the tensorflow keras library for model training and dataset management.<br>
+Each sentence is tokenized using a tokenizer, and these tokenized sentences undergo input embedding followed by the addition of positional encoding before entering the multi-head attention mechanism.<br>**
+<img width="500" height='700' alt="image" src="https://github.com/qkrwoghd04/binary_classification_using_BERT-ViT/assets/122519801/4a00f0d1-32e3-4390-a793-d47a033eacc6">
 
-> ### 2. CNN Architecture (23.11.13) [REFERENCE_MODEL_CODE](https://github.com/qkrwoghd04/ViT_For_ImageCaptionnng_Implementation/blob/master/practice/CNN_Architecture_Practice.ipynb).
-> ### 3. Transformer (24.03.10 - 24.03.13)
-<img width="500" height='350' alt="image" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/2d8ce1cf-c305-4863-8f8a-6d1009ce05cf">
+**The token “man” strongly attends to “hallway”, and “lying” similarly focuses on “ground”. <br>
+This highlights how the model prioritizes certain tokens over others, revealing how information is centralized around specific words.<br>**
+<img width="500" height='500' alt="image" src="https://github.com/qkrwoghd04/binary_classification_using_BERT-ViT/assets/122519801/4c528134-0320-4d24-b889-52fca8bb4329"><br>
 
-> ### 4. Vision Transformer Architecture(ViT) (23.03.27 - 23.04.02) [ViT_MODEL_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_fusion_using_ViT.ipynb)
-**The model shows good accuracy on the train and validation datasets, but it demonstrates a low accuracy of 0.6 on unseen test data.**
-<img width="500" height="350" alt="ViT" src="https://github.com/qkrwoghd04/multimodal_learning/assets/122519801/27777d21-e7b0-4606-8164-05f3c07799aa"><br>
-> ### 5. Multimodal deep learning [LATE_FUTION_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_late_fusion.ipynb)
+---
+> ### 2. Transformer Background Study (24.03.10 - 24.03.13)
+<img width="500" height='350' alt="image" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/2d8ce1cf-c305-4863-8f8a-6d1009ce05cf"><br>
+
+---
+> ### 3. Vision Transformer Architecture(ViT) Implementation (23.03.27 - 23.04.02) [ViT_MODEL_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_fusion_using_ViT.ipynb)
+> #### ViT Mechanism
+**Similar to the BERT model, these patches are processed as individual image tokens. Each patch token progress linear projection and subsequently augmented with positional embeddings.<br>
+This step enables the Transformer encoder to process each patch. The self-attention mechanism within each Transformer block allows the model to prioritize and weigh the patches independently of their spatial positions, capturing global dependencies within the image.<br>**
+<img width="600" height='350' alt="image" src=https://github.com/qkrwoghd04/binary_classification_using_BERT-ViT/assets/122519801/e7549589-ef2c-4b8f-895f-61bdeda48d4d><br>
+
+> #### Split img
+**The fundamental mechanism begins with dividing the image into patches according to established patch size which is 16x16.<br>
+Then, the image is resized from 224 x 224 to 16x16, resulting in a total of 196 patches of 16x16 each.<br>**
+<img width="500" alt="split img" src="https://github.com/qkrwoghd04/binary_classification_using_BERT-ViT/assets/122519801/80d98b59-5b3c-46a1-8148-93f4be533c51"><br>
+
+---
+> ### 4. Multimodal deep learning Implementation (24.03.14 - 24.04.15) [LATE_FUTION_CODE](https://github.com/qkrwoghd04/ImageCaptionnng_Using_ViT/blob/master/code/Image%26Text_late_fusion.ipynb)
+
+**The figure below illustrates the training process of a Late Fusion Model that combines textual and visual inputs along with labels. After integration as shown in Figure 2.10, the data passes through modality-specific layers: a BERT layer for textual data, and a Vision Transformer (ViT) layer. The BERT layer processes the textual data, producing a 768-dimensional pooled feature vector, and the ViT layer for visual data, establishing a 1000-dimensional pooled output.<br>**
+<img width="700" alt="split img" src="https://github.com/qkrwoghd04/binary_classification_using_BERT-ViT/assets/122519801/7ee60d76-de79-4860-b567-4d033e947f7b"><br>
+
 ---
 ## **Dataset**
 > ### Image Dataset
 - #### Train data
-<img width="160" alt="fall dataset" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/e30eb6b6-7e9e-4357-8621-bb8b3b5cfe59">
-<img width="160" alt="sleep" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/2ad370b5-6e2f-45b7-85ed-d01e9f33738c">
-
-- #### Test data
-<img width="160" alt="fall_test" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/7a515e4d-c29d-4217-89dd-6a163f94b7a5">
-<img width="160" alt="sleep_test" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/72c3026b-a85f-488d-be77-37ec43c4b976">
-
-> ### Text Dataset
-<img width="563" alt="text_data" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/d652cf31-cab1-430f-82ac-762990f275f3">
+<img width="730" alt="multimodal dataset" src="https://github.com/qkrwoghd04/binary_classification_using_BERT-ViT/assets/122519801/0c8064f8-e6ad-42c7-ac7c-01e5521d7240">
 
 > ### fusion Dataset
 <img width="730" alt="multimodal dataset" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/1d058bc4-ef9a-4713-8c02-b28026c5163a">
 
 ---
 ## **Results**
-Test evaluations can vary significantly from the table. **I believe that the quantity and quality of the dataset are the most crucial parts of any AI model**. However, since this project was trained and tested with only 400 training and 40 test data, the results may differ significantly.
+Test evaluations can vary significantly from the table. **I believe that the quantity and quality of the dataset are the most crucial parts of any AI model**. However, since this project was trained and tested with only 400 training and 40 test data, the results may differ significantly.<br>
 - ### **Table**
 | Method | Accuracy(%) |
 |----------|----------|
@@ -45,7 +57,7 @@ Test evaluations can vary significantly from the table. **I believe that the qua
 | **Late Fusion (BERT&ViT)**   | **92.5**   |
 
 - ### **Visualization**
-<img width="650" alt="fusion result" src="https://github.com/qkrwoghd04/Image-text_fusion_for_binary_classification_using_BERT-ViT/assets/122519801/20907efb-f012-4fa5-a964-48b47e2ff3f3">
+<img width="730" alt="multimodal dataset" src="https://github.com/qkrwoghd04/binary_classification_using_BERT-ViT/assets/122519801/620d1900-c159-4578-9175-48a70e55d75d">
 
 ---
 ### **Reference List**
