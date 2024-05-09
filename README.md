@@ -76,6 +76,10 @@ https://medium.com/@konstantinos.gyftodimos/vision-transformer-for-binary-classi
 ## Dataset Reference
 [Elderly Set]https://gram.web.uah.es/data/datasets/fpds/index.html
 
+---
+## License
+This project is released by Apeche License version 2.0
+
 
 
 
